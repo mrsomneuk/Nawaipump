@@ -2,7 +2,7 @@ import { createClient } from 'https://esm.sh';
 
 // ใส่ค่าจาก Supabase > Project Settings > API
 const SUPABASE_URL = 'https://YOUR_PROJECT_ID.supabase.co';
-const SUPABASE_ANON_KEY = 'YOUR_PUBLIC_ANON_KEY';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlkaWdhcGdqbmFsYXFmZGpyaGdkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUxMzUzODgsImV4cCI6MjExMDcxMTM4OH0.VvT03A_dql4QTmgiwrCtZi-DKkJgXDFJIrG4T2bPvJ8';
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
