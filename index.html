@@ -322,7 +322,7 @@ const CATS = { income: ['ขายน้ำมัน','รายรับอื�
 const FUEL = 'ซื้อน้ำมัน';
 const S = { tx: [], items: [], month: 'all', type: 'expense', editId: '', charts: {}, qr: { meta: {}, coins: [], daily: [], child: {}, loaded: false } };
 const $ = id => document.getElementById(id);
-const run = (fn, ...a) => new Promise((ok, no) => google.script.run.withSuccessHandler(ok).withFailureHandler(no)[fn](...a));
+const run = (fn, ...a) => new Promise((ok, no) => supabase-js.withSuccessHandler(ok).withFailureHandler(no)[fn](...a));
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const nf = (n, d = 0) => Number(n || 0).toLocaleString('th-TH', { minimumFractionDigits: d, maximumFractionDigits: d });
 const thDate = s => { const [y, m, d] = s.split('-').map(Number); return d + ' ' + MON[m - 1] + ' ' + String((y + 543) % 100).padStart(2, '0'); };
